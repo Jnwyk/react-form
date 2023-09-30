@@ -1,7 +1,7 @@
 import "./App.css";
 import MUITextField from "./components/TextField";
 import MUISelect from "./components/Select";
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import MUIButton from "./components/Button";
 import { useState } from "react";
 import MUIDatePicker from "./components/DatePicker";
 import dayjs from "dayjs";
@@ -20,7 +20,6 @@ function App() {
 
   return (
     <>
-    {console.log(form)}
       <MUITextField
         required={true}
         label="Imie"
@@ -49,6 +48,7 @@ function App() {
         value={form.continent}
       />
       <MUIDatePicker label="Data urodzenia" id="birthDate" handleOnChange={(value) => handleInputChange("birthDate", value)}/>
+      <MUIButton onClick={() => console.log("submit")} text="Wyslij" />
     </>
   );
 }
