@@ -1,7 +1,11 @@
 import { Button } from "@mui/material";
 
-const MUIButton = ({text, onClick, disabled}) => {
-    return <Button variant="standard" color="secondary" onClick={onClick} disabled={disabled}>{text}</Button>
-}
+const MUIButton = ({ text, onClick, disabled }) => {
+  return (
+    <Button variant="contained" onClick={onClick} disabled={disabled}>
+      {text}
+    </Button>
+  );
+};
 
-export default MUIButton
+export default MUIButton;

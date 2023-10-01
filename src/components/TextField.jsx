@@ -6,7 +6,6 @@ const MUITextField = ({ id, required, label, handleOnChange }) => {
       variant="standard"
       id={id}
       name={id}
-      color="secondary"
       label={label}
       required={required}
       onChange={(e) => handleOnChange(e.target.value)}
